@@ -3,7 +3,7 @@
 现阶段分支管理分为Dev, Master.
 
 需要增加一Release 分支。
- ![image](https://github.com/ctofunds/ctofunds/blob/master/LOGO/jenkins.png)
+ ![image](https://github.com/wuyingminhui/Continuous_Integration_Document/blob/master/code.png)
 
 下面列下分支主要区分：
 
