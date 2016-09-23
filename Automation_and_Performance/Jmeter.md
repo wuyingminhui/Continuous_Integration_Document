@@ -19,20 +19,26 @@ Apache JMeter是Apache组织开发的基于Java的压力测试工具。
 
 ###1. 了解Jmeter基本流程用法
   1. 打开Jmeter, bin目录下执行jmeter.bat(windows)或者jmeter.sh(linux)
+  ![1](https://github.com/wuyingminhui/Continuous_Integration_Document/blob/master/Automation_and_Performance/img/jmeter1.jpg)
   
   2. 添加线程组, 在“测试计划”上点击鼠标右键-->添加-->threads(Users)-->线程组
   
   添加测试场景设置组件，接口测试中一般设置为1个“线程数”，根据测试数据的个数设定“循环次数”
-  
+  ![2](https://github.com/wuyingminhui/Continuous_Integration_Document/blob/master/Automation_and_Performance/img/jmeter2.jpg)
   3. 添加'HTTP Cookie管理器', 主要用于保存必要的请求头(如不需要登入信息保存的请跳过这步骤)
+  ![3](https://github.com/wuyingminhui/Continuous_Integration_Document/blob/master/Automation_and_Performance/img/jmeter3.jpg)
   
   4. 添加'Http请求默认值'组件，填写被测系统的域名和端口，http请求的实现包版本以及具体协议类型，线程组里的所有“HTTP Sampler”可默认使用此设置。用于统一区分环境的测试。(可以理解为之后HTTP请求的基类)
-  
+  ![4](https://github.com/wuyingminhui/Continuous_Integration_Document/blob/master/Automation_and_Performance/img/jmeter4.jpg)
+
   5. 在'线程组'里添加'HTTP 请求'的Sampler, 填写请求路径，对应的请求方法，以及随请求一起发送的参数
+  ![5](https://github.com/wuyingminhui/Continuous_Integration_Document/blob/master/Automation_and_Performance/img/jmeter5.jpg)
   
   6. 设置检查点：'线程组'-'断言'-'响应断言'。在被测接口对应的'HTTP 请求'上，添加'响应断言'并添加对相应结果的正则判断。
+  ![6](https://github.com/wuyingminhui/Continuous_Integration_Document/blob/master/Automation_and_Performance/img/jmeter6.jpg)
   
   7. 添加监听器：'线程组'-'监听器'-'查看结果树', 方便查看运行后的结果
+  ![7](https://github.com/wuyingminhui/Continuous_Integration_Document/blob/master/Automation_and_Performance/img/jmeter7.jpg)
 
 ###2. Jmeter做接口自动化测试
   通过上述的基本用法添加的http请求测试可以理解为一个HTTP接口测试，按照自己的需求将接口组织完善即可。
