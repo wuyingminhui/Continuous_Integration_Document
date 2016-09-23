@@ -5,6 +5,8 @@ Apache JMeter是Apache组织开发的基于Java的压力测试工具。
 
 它主要的特点: 开源，学习曲线平滑，功能全面，文档齐全。
 
+***注: 本文所用Jmeter可在[这里](https://pan.baidu.com/s/1o8tpajg)下载***
+
 ##API接口测试的流程
 1. 项目启动后，测试人员要尽早找到开发人员拿到接口测试文档
 　
@@ -51,3 +53,7 @@ Apache JMeter是Apache组织开发的基于Java的压力测试工具。
   Jmeter的性能测试主要通过线程组的线程数及集合点的设置来做。
   
   当一台压力机器不够时也可通过agent的方式连接多台压力机器。
+
+
+***Guide用到的demo可在[这里](https://github.com/wuyingminhui/Continuous_Integration_Document/tree/master/Automation_and_Performance/demo)下载***
+  
