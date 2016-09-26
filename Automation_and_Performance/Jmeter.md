@@ -59,11 +59,12 @@ Apache JMeter是Apache组织开发的基于Java的压力测试工具。
   
   这里 图一 为一般压力测试的线程组配置。
   配置线程数100， 集合点为5秒，持续时间为30秒。
-  
+  ![imgp3](https://github.com/wuyingminhui/Continuous_Integration_Document/blob/master/Automation_and_Performance/img/performance3)
   图二为一般性能测试配置
   配置线程数100， 集合点为10秒，跑1次性能测试。
-  
+  ![imgp1](https://github.com/wuyingminhui/Continuous_Integration_Document/blob/master/Automation_and_Performance/img/performance1)
   图三为设置的聚合报告(添加'监听器' - '聚合报告')
+  ![imgp2](https://github.com/wuyingminhui/Continuous_Integration_Document/blob/master/Automation_and_Performance/img/performance2)
   
   
 当一台压力机器不够时也可通过agent的方式连接多台压力机器。
