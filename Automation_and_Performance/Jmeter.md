@@ -52,7 +52,21 @@ Apache JMeter是Apache组织开发的基于Java的压力测试工具。
 ###3. Jmeter做性能测试
   Jmeter的性能测试主要通过线程组的线程数及集合点的设置来做。
   
-  当一台压力机器不够时也可通过agent的方式连接多台压力机器。
+  一般性能测试分为压力测试及性能测试两种:
+  
+  1. 压力测试即在一定性能压力下跑持续耐久测试，看服务器的响应及资源使用情况。(baseline 测试)
+  2. 性能测试及不断测试被测端的压力承受能力得到其的性能最高瓶颈 (capacity 测试)
+  
+  这里 图一 为一般压力测试的线程组配置。
+  配置线程数100， 集合点为5秒，持续时间为30秒。
+  
+  图二为一般性能测试配置
+  配置线程数100， 集合点为10秒，跑1次性能测试。
+  
+  图三为设置的聚合报告(添加'监听器' - '聚合报告')
+  
+  
+当一台压力机器不够时也可通过agent的方式连接多台压力机器。
 
 
 ***Guide用到的demo可在[这里](https://github.com/wuyingminhui/Continuous_Integration_Document/tree/master/Automation_and_Performance/demo)下载***
